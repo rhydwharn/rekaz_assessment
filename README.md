@@ -52,7 +52,7 @@ Here’s a list of the primary dependencies this project uses:
 Run this command to install these dependencies if not already installed:
 
 ```bash
-npm install cypress @badeball/cypress-cucumber-preprocessor @faker-js/faker 
+npm install cypress @badeball/cypress-cucumber-preprocessor @faker-js/faker multiple-cucumber-html-reporter moment
 ```
 
 ## Project Structure

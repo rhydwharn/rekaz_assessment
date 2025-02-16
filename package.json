@@ -13,6 +13,8 @@
     "cypress": "latest",
     "eslint": "latest",
     "eslint-plugin-cypress": "latest",
+    "moment": "^2.30.1",
+    "multiple-cucumber-html-reporter": "^3.9.0",
     "playwright-webkit": "latest"
   },
   "cypress-cucumber-preprocessor": {
