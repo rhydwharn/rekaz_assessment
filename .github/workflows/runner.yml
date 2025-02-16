@@ -1,0 +1,33 @@
+name: Run Cypress Test
+
+on: [push]
+
+jobs:
+  cypress-runner:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Run Cypress
+        uses: cypress-io/github-action@v6
+        with:
+          browser: chrome # Ensure Cypress runs in Chrome
+
+      - name: Run Node reporter
+        run: node reporter.js
+
+      - name: Upload test results
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: cypress-results
+          path: |
+            cypress/screenshots
+            cypress/videos
+            cypress/logs
+            results/
