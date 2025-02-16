@@ -25,5 +25,6 @@ Then(/^I input the "([^"]*)"$/, (element) => {
 
 
 Then(/^I validate success message$/, () => {
+    cy.wait(5000)
 	cy.contains("Your project's website has been successfully created!")
 });

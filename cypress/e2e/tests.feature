@@ -1,7 +1,7 @@
 
-Feature: Sample Test
+Feature: REKAZ.IO REGISTRATION FLOW
 
-    Scenario: Check site is available
+    Scenario: Rekaz Registration Flow [Positive Test]
         Given I am on the home page
         # When I click on the "registration button"
         Then I should see cypress the registration page
