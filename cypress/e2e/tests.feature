@@ -23,4 +23,5 @@ Feature: Sample Test
         Then I click on the "friday switch"
         Then I input the "service name"
         Then I input the "price"
-        Then I click on "submit btn"
+        Then I click on the "submit btn"
+        Then I validate success message

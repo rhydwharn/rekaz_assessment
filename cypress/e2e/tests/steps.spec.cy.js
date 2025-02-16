@@ -22,3 +22,8 @@ Then(/^I click on the "([^"]*)"$/, (element) => {
 Then(/^I input the "([^"]*)"$/, (element) => {
 	cy.inputSwitch(element);
 });
+
+
+Then(/^I validate success message$/, () => {
+	cy.contains("Your project's website has been successfully created!")
+});
